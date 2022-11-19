@@ -1,0 +1,26 @@
+syntax = "proto3";
+package SimsIMS;
+
+message UserInfo {
+  string user_id = 1;
+}
+
+message CreateUserRequest {
+  UserInfo info = 1;
+}
+
+message CreateUserResponse {}
+
+message ReadUserRequest {
+  UserInfo info = 1;
+}
+
+message ReadUserResponse {
+  UserInfo info = 1;
+}
+
+message DeleteUserRequest {
+  UserInfo info = 1;
+}
+
+message DeleteUserResponse {}

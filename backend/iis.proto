@@ -1,0 +1,28 @@
+syntax = "proto3";
+import "user_messages.proto";
+import "shelf_messages.proto";
+import "slot_messages.proto";
+import "item_messages.proto";
+package SimsIMS;
+
+service SimsInventoryInformationSystem {
+  rpc CreateUser(CreateUserRequest) returns (CreateUserResponse) {}
+  rpc ReadUser(ReadUserRequest) returns (ReadUserResponse) {}
+  rpc DeleteUser(DeleteUserRequest) returns (DeleteUserResponse) {}
+
+  rpc CreateShelf(CreateShelfRequest) returns (CreateShelfResponse) {}
+  rpc ReadShelf(ReadShelfRequest) returns (ReadShelfResponse) {}
+  rpc UpdateShelf(UpdateShelfRequest) returns (UpdateShelfResponse) {}
+  rpc DeleteShelf(DeleteShelfRequest) returns (DeleteShelfResponse) {}
+
+  rpc CreateSlot(CreateSlotRequest) returns (CreateSlotResponse) {}
+  rpc ReadSlot(ReadSlotRequest) returns (ReadSlotResponse) {}
+  rpc UpdateSlot(UpdateSlotRequest) returns (UpdateSlotResponse) {}
+  rpc DeleteSlot(DeleteSlotRequest) returns (DeleteSlotResponse) {}
+  rpc CreateSlots(CreateSlotsRequest) returns (CreateSlotsResponse) {}
+
+  rpc CreateItem(CreateItemRequest) returns (CreateItemResponse) {}
+  rpc ReadItem(ReadItemRequest) returns (ReadItemResponse) {}
+  rpc UpdateItem(UpdateItemRequest) returns (UpdateItemResponse) {}
+  rpc DeleteItem(DeleteItemRequest) returns (DeleteItemResponse) {}
+}

@@ -1,0 +1,55 @@
+syntax = "proto3";
+package SimsIMS;
+
+message SlotInfo {
+  uint32 slot_num = 1;
+  uint32 capacity = 2;
+  uint32 item_count = 3;
+}
+
+message CreateSlotRequest {
+  string user_id = 1;
+  SlotInfo info = 2;
+}
+
+message CreateSlotResponse {}
+
+message ReadSlotRequest {
+  string user_id = 1;
+  string shelf_id = 2;
+  uint32 slot_num = 3;
+}
+
+message ReadSlotResponse {
+  SlotInfo info = 1;
+}
+
+message UpdateSlotRequest {
+  string user_id = 1;
+  string shelf_id = 2;
+  uint32 slot_num = 3;
+  SlotInfo new_info = 4;
+}
+
+message UpdateSlotResponse {}
+
+message DeleteSlotRequest {
+  string user_id = 1;
+  string shelf_id = 2;
+  uint32 slot_num = 3;
+}
+
+message DeleteSlotResponse {}
+
+message CreateSlotsRequest {
+  message PerSlotCapacity {repeated uint32 capacity = 1;}
+  string user_id = 1;
+  string shelf_id = 2;
+  uint32 slots = 3;
+  oneof slot_capacities {
+    uint32 all = 4;
+    PerSlotCapacity each = 5;
+  }
+}
+
+message CreateSlotsResponse {}

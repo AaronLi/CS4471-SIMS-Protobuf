@@ -1,0 +1,42 @@
+syntax = "proto3";
+package SimsIMS;
+
+message ItemInfo {
+  string description = 1;
+  uint32 object_id = 2;
+  uint32 price = 3;
+  uint32 stock = 4;
+}
+
+message CreateItemRequest {
+  string user_id = 1;
+  string shelf_id = 2;
+  uint32 slot_number = 3;
+  ItemInfo info = 4;
+}
+
+message CreateItemResponse {}
+
+message ReadItemRequest {
+  string user_id = 1;
+  string item_id = 2;
+}
+
+message ReadItemResponse {
+  ItemInfo info = 1;
+}
+
+message UpdateItemRequest {
+  string user_id = 1;
+  string item_id = 2;
+  ItemInfo new_info = 3;
+}
+
+message UpdateItemResponse {}
+
+message DeleteItemRequest {
+  string user_id = 1;
+  string item_id = 2;
+}
+
+message DeleteItemResponse {}

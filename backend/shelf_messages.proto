@@ -1,0 +1,38 @@
+syntax = "proto3";
+package SimsIMS;
+
+message ShelfInfo {
+  string shelf_id = 1;
+  uint32  shelf_count = 2;
+}
+
+message CreateShelfRequest {
+  string user_id = 1;
+  ShelfInfo info = 2;
+}
+
+message CreateShelfResponse {}
+
+message ReadShelfRequest {
+  string user_id = 1;
+  string target = 2;
+}
+
+message ReadShelfResponse {
+  ShelfInfo info = 1;
+}
+
+message UpdateShelfRequest {
+  string user_id = 1;
+  string target = 2;
+  ShelfInfo new_state = 3;
+}
+
+message UpdateShelfResponse {}
+
+message DeleteShelfRequest {
+  string user_id = 1;
+  string target = 2;
+}
+
+message DeleteShelfResponse {}
