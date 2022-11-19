@@ -1,6 +1,9 @@
 syntax = "proto3";
 package SimsIMS;
+import "frontend_messages";
+package SimsIMS;
 
 service SimsFrontend {
-  
+    rpc CredAuth(LoginRequest) returns (Token) {}
+    rpc ClientCmd(ClientCli) returns (ClientAction) {}
 }
