@@ -1,5 +1,5 @@
 syntax = "proto3";
-package SimsIMS;
+package sims_ims_frontend;
 
 message LoginRequest{
     string username = 1;

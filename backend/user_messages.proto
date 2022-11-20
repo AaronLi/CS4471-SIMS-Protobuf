@@ -1,5 +1,5 @@
 syntax = "proto3";
-package SimsIMS;
+package sims_ims_backend;
 
 message UserInfo {
   string user_id = 1;

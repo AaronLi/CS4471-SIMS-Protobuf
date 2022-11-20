@@ -1,5 +1,5 @@
 syntax = "proto3";
-package SimsIMS;
+package sims_ims_backend;
 
 message SlotInfo {
   uint32 slot_num = 1;

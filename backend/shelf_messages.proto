@@ -1,5 +1,5 @@
 syntax = "proto3";
-package SimsIMS;
+package sims_ims_backend;
 
 message ShelfInfo {
   string shelf_id = 1;

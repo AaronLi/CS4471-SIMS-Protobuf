@@ -3,7 +3,7 @@ import "user_messages.proto";
 import "shelf_messages.proto";
 import "slot_messages.proto";
 import "item_messages.proto";
-package SimsIMS;
+package sims_ims_backend;
 
 service SimsInventoryInformationSystem {
   rpc CreateUser(CreateUserRequest) returns (CreateUserResponse) {}

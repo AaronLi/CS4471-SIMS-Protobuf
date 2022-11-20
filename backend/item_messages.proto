@@ -1,5 +1,5 @@
 syntax = "proto3";
-package SimsIMS;
+package sims_ims_backend;
 
 message ItemInfo {
   string description = 1;
