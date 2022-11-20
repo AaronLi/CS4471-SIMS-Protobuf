@@ -1,8 +1,8 @@
 syntax = "proto3";
-import "user_messages.proto";
-import "shelf_messages.proto";
-import "slot_messages.proto";
-import "item_messages.proto";
+import "backend_proto/user_messages.proto";
+import "backend_proto/shelf_messages.proto";
+import "backend_proto/slot_messages.proto";
+import "backend_proto/item_messages.proto";
 package sims_ims_backend;
 
 service SimsInventoryInformationSystem {
