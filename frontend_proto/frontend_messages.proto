@@ -10,6 +10,10 @@ message Token{
     string token = 1;
 }
 
+message AuthError{
+    string error = 1;
+}
+
 message ClientAction {
     string action = 1;
     string param = 2;
