@@ -64,7 +64,7 @@ message Items{
 }
 
 message Slots {
-    repeated SlotInfo shelves = 1;
+    repeated SlotInfo slots = 1;
 }
 
 message Shelves {
