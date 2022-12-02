@@ -46,3 +46,7 @@ message GetShelvesRequest {
   string user_id = 2;
   string token = 3;
 }
+
+message Shelves {
+  repeated ShelfInfo shelves = 1;
+}
