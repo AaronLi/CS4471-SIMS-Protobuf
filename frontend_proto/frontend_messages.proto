@@ -55,8 +55,9 @@ message GetSlotRequest {
 
 message GetItemRequest {
   optional string object_id = 1;
-  string username = 2;
-  string token = 3;
+  optional string shelf_id = 2;
+  string username = 3;
+  string token = 4;
 }
 
 message Items{
