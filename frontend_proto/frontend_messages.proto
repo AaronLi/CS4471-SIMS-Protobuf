@@ -11,7 +11,7 @@ message Token{
     string token = 1;
 }
 
-message ClientCmd{
+message ClientAction{
     string user_id = 1;
     string action = 2;
     Info info = 3;
