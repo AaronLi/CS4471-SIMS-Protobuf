@@ -53,6 +53,16 @@ message GetSlotRequest {
   string token = 3;
 }
 
+message GetItemRequest {
+  optional string object_id = 1;
+  string username = 2;
+  string token = 3;
+}
+
+message Items{
+    repeated ItemInfo items = 1;
+}
+
 message Slots {
     repeated SlotInfo shelves = 1;
 }
