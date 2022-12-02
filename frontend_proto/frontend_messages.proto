@@ -42,7 +42,7 @@ message Info{
 }
 
 message GetShelvesRequest {
-  string shelf_id = 1;
+  optional string shelf_id = 1;
   string user_id = 2;
   string token = 3;
 }
