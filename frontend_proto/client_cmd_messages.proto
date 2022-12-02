@@ -19,9 +19,9 @@ message SlotInfo {
 }
 
 message Info{
-    ShelfInfo shelfInfo;
-    ItemInfo itemInfo;
-    SlotInfo slotInfo;
+    ShelfInfo shelfInfo = 1;
+    ItemInfo itemInfo = 2;
+    SlotInfo slotInfo = 3;
 }
 
 
