@@ -1,0 +1,29 @@
+syntax = "proto3";
+package sims_ims_backend;
+
+message ItemInfo {
+  string description = 1;
+  uint32 object_id = 2;
+  uint32 price = 3;
+  uint32 stock = 4;
+}
+
+message ShelfInfo {
+    string shelf_id = 1;
+    uint32 shelf_count = 2;
+}
+message SlotInfo {
+  uint32 slot_num = 1;
+  uint32 capacity = 2;
+  uint32 item_count = 3;
+}
+
+message Info{
+    ShelfInfo shelfInfo;
+    ItemInfo itemInfo;
+    SlotInfo slotInfo;
+}
+
+
+
+

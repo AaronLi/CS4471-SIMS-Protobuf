@@ -1,4 +1,5 @@
 syntax = "proto3";
+import "frontend_proto/client_cmd_messages.proto";
 package sims_ims_frontend;
 
 message LoginRequest{
@@ -10,9 +11,10 @@ message Token{
     string token = 1;
 }
 
-message ClientAction {
-    string action = 1;
-    string param = 2;
+message ClientCmd{
+    string user_id = 1;
+    string action = 2;
+    Info info = 3;
 }
 
 message ActionApproved{}
