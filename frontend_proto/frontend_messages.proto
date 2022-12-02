@@ -46,3 +46,17 @@ message GetShelvesRequest {
   string username = 2;
   string token = 3;
 }
+
+message GetSlotRequest {
+  optional string slot_num = 1;
+  string user_id = 2;
+  string token = 3;
+}
+
+message Slots {
+    repeated SlotInfo shelves = 1;
+}
+
+message Shelves {
+  repeated ShelfInfo shelves = 1;
+}
