@@ -10,9 +10,53 @@ message Token{
     string token = 1;
 }
 
-message ClientAction {
-    string action = 1;
-    string param = 2;
+message ClientAction{
+    string user_id = 1;
+    string action = 2;
+    Info info = 3;
 }
 
 message ActionApproved{}
+
+message ItemInfo {
+  string description = 1;
+  uint32 object_id = 2;
+  uint32 price = 3;
+  uint32 stock = 4;
+}
+
+message ShelfInfo {
+    string shelf_id = 1;
+    uint32 shelf_count = 2;
+}
+message SlotInfo {
+  uint32 slot_num = 1;
+  uint32 capacity = 2;
+  uint32 item_count = 3;
+}
+
+message Info{
+    ShelfInfo shelfInfo = 1;
+    ItemInfo itemInfo = 2;
+    SlotInfo slotInfo = 3;
+}
+
+message GetShelvesRequest {
+  optional string shelf_id = 1;
+  string username = 2;
+  string token = 3;
+}
+
+message GetSlotRequest {
+  optional string slot_num = 1;
+  string username = 2;
+  string token = 3;
+}
+
+message Slots {
+    repeated SlotInfo shelves = 1;
+}
+
+message Shelves {
+  repeated ShelfInfo shelves = 1;
+}
