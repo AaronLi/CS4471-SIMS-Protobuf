@@ -1,6 +1,5 @@
 syntax = "proto3";
 import "frontend_proto/frontend_messages.proto";
-import "frontend_proto/client_cmd_messages.proto";
 package sims_ims_frontend;
 
 service SimsFrontend {
