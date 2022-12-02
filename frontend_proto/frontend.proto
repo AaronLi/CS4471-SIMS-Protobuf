@@ -5,4 +5,5 @@ package sims_ims_frontend;
 service SimsFrontend {
     rpc CredAuth(LoginRequest) returns (Token) {}
     rpc ClientCmd(ClientAction) returns (ActionApproved) {}
+    rpc GetShelves(GetShelvesRequest) returns (stream ShelfInfo){}
 }
