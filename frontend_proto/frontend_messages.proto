@@ -20,9 +20,8 @@ message ActionApproved{}
 
 message ItemInfo {
   string description = 1;
-  uint32 object_id = 2;
-  uint32 price = 3;
-  uint32 stock = 4;
+  uint32 price = 2;
+  uint32 stock = 3;
 }
 
 message ShelfInfo {
