@@ -49,7 +49,7 @@ message GetShelvesRequest {
 
 message GetSlotRequest {
   optional string slot_num = 1;
-  string user_id = 2;
+  string username = 2;
   string token = 3;
 }
 
