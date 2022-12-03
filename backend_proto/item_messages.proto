@@ -20,7 +20,8 @@ message CreateItemResponse {}
 
 message ReadItemRequest {
   string user_id = 1;
-  string item_id = 2;
+  uint32 item_id = 2;
+  optional string shelf_id = 3;
 }
 
 message ReadItemResponse {
