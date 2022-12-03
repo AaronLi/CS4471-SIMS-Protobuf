@@ -22,7 +22,7 @@ message ItemInfo {
   string description = 1;
   uint32 object_id = 2;
   string shelf_id = 3;
-  uint32 price = 4;
+  float price = 4;
   uint32 stock = 5;
 }
 
