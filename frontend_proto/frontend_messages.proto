@@ -20,8 +20,10 @@ message ActionApproved{}
 
 message ItemInfo {
   string description = 1;
-  uint32 price = 2;
-  uint32 stock = 3;
+  string object_id = 2;
+  string shelf_id = 3
+  uint32 price = 4;
+  uint32 stock = 5;
 }
 
 message ShelfInfo {
@@ -53,10 +55,9 @@ message GetSlotRequest {
 }
 
 message GetItemRequest {
-  optional string object_id = 1;
-  optional string shelf_id = 2;
-  string username = 3;
-  string token = 4;
+  optional string shelf_id = 1;
+  string username = 2;
+  string token = 3;
 }
 
 message Items{
