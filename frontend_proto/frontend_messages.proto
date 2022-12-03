@@ -63,7 +63,7 @@ message GetItemsRequest {
 message GetItemRequest{
     string username = 1;
     string token = 2;
-    string itemID = 3;
+    uint32 itemID = 3;
 }
 
 message Items{
