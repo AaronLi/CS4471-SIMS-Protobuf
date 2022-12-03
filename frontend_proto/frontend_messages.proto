@@ -43,21 +43,27 @@ message Info{
 }
 
 message GetShelvesRequest {
-  optional string shelf_id = 1;
-  string username = 2;
-  string token = 3;
+    optional string shelf_id = 1;
+    string username = 2;
+    string token = 3;
 }
 
 message GetSlotRequest {
-  optional string slot_num = 1;
-  string username = 2;
-  string token = 3;
+    optional string slot_num = 1;
+    string username = 2;
+    string token = 3;
 }
 
-message GetItemRequest {
-  optional string shelf_id = 1;
-  string username = 2;
-  string token = 3;
+message GetItemsRequest {
+    optional string shelf_id = 1;
+    string username = 2;
+    string token = 3;
+}
+
+message GetItemRequest{
+    string username = 1;
+    string token = 2;
+    string itemID = 3;
 }
 
 message Items{
@@ -69,5 +75,5 @@ message Slots {
 }
 
 message Shelves {
-  repeated ShelfInfo shelves = 1;
+    repeated ShelfInfo shelves = 1;
 }
