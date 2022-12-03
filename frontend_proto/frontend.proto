@@ -8,5 +8,5 @@ service SimsFrontend {
     rpc ClientCmd(ClientAction) returns (ActionApproved) {}
     rpc GetShelves(GetShelvesRequest) returns (Shelves){}
     rpc GetItems(GetItemsRequest) returns (Items){}
-    rpc GetSingularItem(GetItemRequest) returns (ItemInfo)
+    rpc GetSingularItem(GetItemRequest) returns (ItemInfo){}
 }
