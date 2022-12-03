@@ -9,4 +9,5 @@ service SimsFrontend {
     rpc GetShelves(GetShelvesRequest) returns (Shelves){}
     rpc GetItems(GetItemsRequest) returns (Items){}
     rpc GetSingularItem(GetItemRequest) returns (ItemInfo){}
+    rpc CreateShelf(CreateShelfRequest) returns (ActionApproved){}
 }
