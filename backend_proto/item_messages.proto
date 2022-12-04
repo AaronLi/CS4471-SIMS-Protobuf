@@ -11,11 +11,13 @@ message ItemInfo {
 
 message CreateItemRequest {
   string user_id = 1;
-  string shelf_id = 2;
-  ItemInfo info = 4;
+  ItemInfo info = 2;
 }
 
-message CreateItemResponse {}
+message CreateItemResponse {
+  string shelf_id = 1;
+  uint32 slot = 2;
+}
 
 message ReadItemRequest {
   string user_id = 1;
