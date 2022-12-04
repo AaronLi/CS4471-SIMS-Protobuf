@@ -15,7 +15,6 @@ message CreateShelfResponse {}
 
 message ReadShelfRequest {
   string user_id = 1;
-  string target = 2;
 }
 
 message ReadShelfResponse {
