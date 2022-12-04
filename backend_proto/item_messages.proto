@@ -12,7 +12,6 @@ message ItemInfo {
 message CreateItemRequest {
   string user_id = 1;
   string shelf_id = 2;
-  uint32 slot_number = 3;
   ItemInfo info = 4;
 }
 
