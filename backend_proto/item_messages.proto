@@ -4,26 +4,29 @@ package sims_ims_backend;
 message ItemInfo {
   string description = 1;
   uint32 object_id = 2;
-  uint32 price = 3;
-  uint32 stock = 4;
+  string shelf_id = 3;
+  float price = 4;
+  uint32 stock = 5;
 }
 
 message CreateItemRequest {
   string user_id = 1;
-  string shelf_id = 2;
-  uint32 slot_number = 3;
-  ItemInfo info = 4;
+  ItemInfo info = 2;
 }
 
-message CreateItemResponse {}
+message CreateItemResponse {
+  string shelf_id = 1;
+  uint32 slot = 2;
+}
 
 message ReadItemRequest {
   string user_id = 1;
-  string item_id = 2;
+  uint32 item_id = 2;
+  optional string shelf_id = 3;
 }
 
 message ReadItemResponse {
-  ItemInfo info = 1;
+  repeated ItemInfo info = 1;
 }
 
 message UpdateItemRequest {

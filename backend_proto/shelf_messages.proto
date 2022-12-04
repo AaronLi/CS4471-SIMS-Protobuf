@@ -15,11 +15,10 @@ message CreateShelfResponse {}
 
 message ReadShelfRequest {
   string user_id = 1;
-  string target = 2;
 }
 
 message ReadShelfResponse {
-  ShelfInfo info = 1;
+  repeated ShelfInfo info = 1;
 }
 
 message UpdateShelfRequest {

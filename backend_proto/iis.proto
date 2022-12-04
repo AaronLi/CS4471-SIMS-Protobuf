@@ -19,7 +19,6 @@ service SimsInventoryInformationSystem {
   rpc ReadSlot(ReadSlotRequest) returns (ReadSlotResponse) {}
   rpc UpdateSlot(UpdateSlotRequest) returns (UpdateSlotResponse) {}
   rpc DeleteSlot(DeleteSlotRequest) returns (DeleteSlotResponse) {}
-  rpc CreateSlots(CreateSlotsRequest) returns (CreateSlotsResponse) {}
 
   rpc CreateItem(CreateItemRequest) returns (CreateItemResponse) {}
   rpc ReadItem(ReadItemRequest) returns (ReadItemResponse) {}

@@ -7,4 +7,7 @@ service SimsFrontend {
     rpc SignUp(LoginRequest) returns (ActionApproved) {}
     rpc ClientCmd(ClientAction) returns (ActionApproved) {}
     rpc GetShelves(GetShelvesRequest) returns (Shelves){}
+    rpc GetItems(GetItemsRequest) returns (Items){}
+    rpc GetSingularItem(GetItemRequest) returns (Items){}
+    rpc CreateShelf(CreateShelfRequest) returns (ActionApproved){}
 }
