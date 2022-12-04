@@ -19,7 +19,7 @@ message ReadShelfRequest {
 }
 
 message ReadShelfResponse {
-  ShelfInfo info = 1;
+  repeated ShelfInfo info = 1;
 }
 
 message UpdateShelfRequest {
